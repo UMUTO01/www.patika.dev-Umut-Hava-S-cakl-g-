@@ -1,0 +1,35 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Sıcaklık ");
+        double a = scan.nextDouble();
+
+        WeatherChecker(a);
+
+
+    }
+
+    public static void WeatherChecker(double Weather) {
+        if(Weather < 5){
+            System.out.print("Kayak yapabilirsin");
+        }
+        if(Weather > 5 && Weather < 15){
+            System.out.print("Sinemaya gidebilirsin");
+        }
+        if(Weather > 15  && Weather<25){
+            System.out.print("Piknik Yap");
+        }
+        else{
+            System.out.print("Yüz");
+        }
+
+    }
+
+
+
+}
